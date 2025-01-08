@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+        
+        <!--=============== REMIX ICONS ===============-->
+        <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Dhanraj's portfolio</title>
+    </head>
+    <body>
+        <!--=============== HEADER PROFILE ===============-->
+        <header class="profile container">
+            <!-- Theme button -->
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+            <div class="profile__container grid">
+                <div class="profile__data">
+                    <div class="profile__border">
+                        <div class="profile__prefil">
+                            <!-- Insert your image, according to the example size of the portfolio -->
+                            <img src="assets/img/perfil.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <h2 class="profile__name">Dhanraj Bhatt</h2>
+                    <h3 class="profile__profession">Applications, IOT & Web Developer</h3>
+
+                    <!--<ul class="profile__social">
+                        <a href="https://www.instagram.com/" target="_blank" class="profile__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/" target="_blank" class="profile__social-link">
+                            <i class="ri-linkedin-box-line"></i>
+                        </a>
+                        <a href="https://github.com/dhanraj-bhatt" target="_blank" class="profile__social-link">
+                            <i class="ri-github-line"></i>
+                        </a>
+                    </ul>-->
+                </div>
+
+                <div class="profile__info grid">
+                    <div class="profile__info-group">
+                        <h3 class="profile__info-number">1</h3>
+                        <p class="profile__info-description">
+                            Year of <br> work
+                        </p>
+                    </div>
+                    <div class="profile__info-group">
+                        <h3 class="profile__info-number">+19</h3>
+                        <p class="profile__info-description">
+                            Completed <br> projects
+                        </p>
+                    </div>
+                    <!--
+                    <div class="profile__info-group">
+                        <h3 class="profile__info-number">8</h3>
+                        <p class="profile__info-description">
+                            Satisfied <br> customers
+                        </p>
+                    </div>
+                    -->
+                </div>
+
+                <div class="profile__buttons">
+                    <!-- Insert your CV -->
+                    <a download="" href="assets/pdf/Dhanraj's Resume.pdf" class="button">
+                        Download Resume <i class="ri-download-line"></i>
+                    </a>
+
+                    <div class="profile__buttons-small">
+                        <!-- Insert a real number plus country code -->
+                        <a href="https://api.whatsapp.com/send?phone=917874809304&text=Hello, more information!" target="_blank" class="button button_one">
+                            <i class="ri-whatsapp-line"></i>
+                        </a>
+                        <!-- Insert your brand name or profile 
+                        <a href="https://m.me/bedimcode
+                        " target="_blank" class="button button__small button__gray">
+                            <i class="ri-messenger-line"></i>
+                        </a>
+                        -->
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!--=============== MAIN ===============-->
+        <main class="main">
+            <section class="filters container">
+                <!--=============== FILTERS TABS ===============-->
+                <ul class="filters__content">
+                    <button class="filters__button filter-tab-active" data-target="#projects">
+                       My Work
+                    </button>
+                    
+                    <button class="filters__button" data-target="#myprojects">
+                       My Projects
+                    </button>
+
+                    <button class="filters__button" data-target="#skills">
+                        Skills
+                    </button>
+                </ul>
+
+                <div class="filters__sections">
+                    <!--=============== PROJECTS ===============-->
+                    <div class="projects__content grid filters__active" data-content id="projects">
+                        <article class="projects__card">
+                            <img src="./Project-pages/01schaeffler/img/schaeffler_logo2.png" alt="schaeffler logo" class="projects__img">
+                            
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">VR Application</span>
+                                    <h3 class="projects__title">DOJO for schaeffler</h3>
+                                    <a href="./Project-pages/01schaeffler/schaeffler.html" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="./Project-pages/03jainEvent/gyanothon/img/gyanothon_logo21.png" alt="gyanothon logo" class="projects__img">
+                            
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">IOT Game</span>
+                                    <h3 class="projects__title">Cycling Game</h3>
+                                    <a href="./Project-pages/03jainEvent/gyanothon/gyanothon.html" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="./Project-pages/03jainEvent/mazegame/img/maze_logo2.jpg" alt="maze logo" class="projects__img">
+                            
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">PC Joystick Game</span>
+                                    <h3 class="projects__title">Maze</h3>
+                                    <a href="./Project-pages/03jainEvent/mazegame/mazegame.html" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="./Project-pages/03jainEvent/memory_manthan/img/memory_manthan_logo2.png" alt="memory manthan logo" class="projects__img">
+                            
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">PC Game</span>
+                                    <h3 class="projects__title">Memory Manthan</h3>
+                                    <a href="./Project-pages/03jainEvent/memory_manthan/memory-manthan.html" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="./Project-pages/03jainEvent/match_the_following/img/match_the_following_logo2.png" alt="match the following logo" class="projects__img">
+                            
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">PC Game</span>
+                                    <h3 class="projects__title">Lakshya Link Up</h3>
+                                    <a href="./Project-pages/03jainEvent/match_the_following/match-the-following.html" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="./Project-pages/03jainEvent/moksh-matrix/img/Moksh_Matrix_logo2.png" alt="Moksh Matrix logo" class="projects__img">
+                            
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">PC Game</span>
+                                    <h3 class="projects__title">Moksh Matrix</h3>
+                                    <a href="./Project-pages/03jainEvent/moksh-matrix/moksh-matrix.html" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="./Project-pages/04HK_BIO_Science/img/HK_BIO_Science_logo.jpg" alt="Moksh Matrix logo" class="projects__img">
+                            
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">PC & VR Application</span>
+                                    <h3 class="projects__title">Products Showcase</h3>
+                                    <a href="./Project-pages/04HK_BIO_Science/HK-BIO-Science.html" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="./Project-pages/05_CivilAviation2024_Dehli/img/CivilAviation2024_Dehli_logo.png" alt="Civil Aviation 2024 Dehli logo" class="projects__img">
+                            
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">PC Application</span>
+                                    <h3 class="projects__title">Civil Aviation 2024</h3>
+                                    <a href="./Project-pages/05_CivilAviation2024_Dehli/Civil-Aviation-2024.html" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="./Project-pages/06_IREDA_StepVision_Gandhinagar/img/IREDA_Logo.jpg" alt="IREDA Logo" class="projects__img">
+                            
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">IOT Application</span>
+                                    <h3 class="projects__title">Step Vision</h3>
+                                    <a href="./Project-pages/06_IREDA_StepVision_Gandhinagar/IREDA-StepVision.html" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="./Project-pages/07_ADC_Bank_Gandhinagar/img/ADC_Bank_Logo.png" alt="ADC Bank Logo" class="projects__img">
+                            
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">PC Application</span>
+                                    <h3 class="projects__title">3D Book</h3>
+                                    <a href="./Project-pages/07_ADC_Bank_Gandhinagar/ADC-Bank.html" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="./Project-pages/08_Amaron_Dubai/img/Amaron_Logo.jpg" alt="Amaron Logo" class="projects__img">
+                            
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">PC Application</span>
+                                    <h3 class="projects__title">Products Info & Quiz</h3>
+                                    <a href="./Project-pages/08_Amaron_Dubai/Amaron.html" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+
+                    <!--===============MY PROJECTS ===============-->
+                    <div class="projects__content grid" data-content id="myprojects">
+
+                        <article class="projects__card">
+                            <img src="./Project-pages/00/01_Hand_Gesture/img/hand_gestures_logo.jpg" alt="Hand Gestures Logo" class="projects__img">
+                            
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">PC Application</span>
+                                    <h3 class="projects__title">Hand Gesture Interaction</h3>
+                                    <a href="./Project-pages/00/01_Hand_Gesture/Hand_Gesture.html" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="./Project-pages/00/02_IOT_Video_Player/img/Iot_Video_Player_logo.jpg" alt="Iot Video Player logo" class="projects__img">
+                            
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">PC Application</span>
+                                    <h3 class="projects__title">IOT Video Player</h3>
+                                    <a href="./Project-pages/00/02_IOT_Video_Player/IOT_Video_Player.html" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="./Project-pages/00/03_Amaron_Exploded_view/img/Amaron_Exploded_view_logo.jpg" alt="Exploded view logo" class="projects__img">
+                            
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">PC Application</span>
+                                    <h3 class="projects__title">Exploded view</h3>
+                                    <a href="./Project-pages/00/03_Amaron_Exploded_view/Amaron_Exploded_view.html" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!--=============== SKILLS ===============-->
+                    <div class="skills_content grid " data-content id="skills">
+                        <div class="skills__area">
+                            <h3 class="skills__title">
+                                Frontend Development
+                            </h3>
+
+                            <div class="skills__box">
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="siklls__name">HTML</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="siklls__name">CSS</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="skills__group">
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="siklls__name">JavaScript</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="siklls__name">React</h3>
+                                            <span class="skills__level">Basic</span>
+                                        </div>
+                                    </div>
+                                                                        
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="skills__area">
+                            <h3 class="skills__title">
+                                Backend Development
+                            </h3>
+
+                            <div class="skills__box">
+                                <div class="skills__group">
+                                    
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="siklls__name">MySQL</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="siklls__name">Firebase</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="skills__group">
+                                    
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="siklls__name">Node Js</h3>
+                                            <span class="skills__level">Basic</span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="skills__area_other">
+                            <h3 class="skills__title">
+                                Other
+                            </h3>
+
+                            <div class="skills__box">
+                                <div class="skills__group">
+                    
+                                   <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="siklls__name">Unity</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="siklls__name">Git & Github</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="siklls__name">IOT</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+                                                                        
+                                </div>
+
+                                <div class="skills__group">
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="siklls__name">VR</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="siklls__name">illustrator</h3>
+                                            <span class="skills__level">Basic</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="siklls__name">Figma</h3>
+                                            <span class="skills__level">Basic</span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--=============== FOOTER ===============-->
+        <footer class="footer container">
+            <span class="footer__copy">
+                &#169; Made With &#128153; By Dhanraj.
+            </span>
+        </footer>
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
