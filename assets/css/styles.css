@@ -457,6 +457,12 @@ body.dark-theme{
     margin-right: 1rem;
   }
 
+  .profile__data {
+    display: grid;
+    text-align: center;
+    padding-top: 25px;
+  }
+
   .profile__info{
     column-gap: 1.5rem;
   }
@@ -479,6 +485,12 @@ body.dark-theme{
     justify-content: center;
   }
 
+  .profile__data {
+    display: grid;
+    text-align: center;
+    padding-top: 25px;
+  }
+
   .filters__content{
     width: 332px;
     margin: 3rem auto;
@@ -489,6 +501,12 @@ body.dark-theme{
   .projects__content,
   .skills_content{
     grid-template-columns: repeat(2,332px);
+  }
+
+  .profile__data {
+    display: grid;
+    text-align: center;
+    padding-top: 25px;
   }
 
   .skills_content{
@@ -507,6 +525,12 @@ body.dark-theme{
   .change-theme{
     top: 2.5rem;
     right: 2.5rem;
+  }
+
+  .profile__data {
+    display: grid;
+    text-align: center;
+    padding-top: 25px;
   }
 
   .profile{
