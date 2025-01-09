@@ -478,6 +478,17 @@ body.dark-theme{
 
 }
 
+@media screen and (min-width: 320px) and (max-width: 576px){
+
+  .profile__data {
+    display: grid;
+    text-align: center;
+    padding-top: 25px;
+  }  
+
+}
+
+
 /* For medium devices */
 @media screen and (min-width: 576px) {
   .projects__content{
