@@ -63,7 +63,7 @@ a {
     text-decoration: none;
 }
 
-.project-media img, .project-media video {
+.project-media img {
     border-radius: 8px;
     margin: 1rem 0;
     max-width: 100%;
@@ -71,6 +71,17 @@ a {
     background-color: var(--container-color);
     box-shadow: 0 2px 5px rgba(0.5, 0.5, 0.5, 0.5);
     color: var(--text-color);
+}
+
+.project-media video {
+  border-radius: 8px;
+  margin: 1rem 0;
+  width: 45%; /* Make the video take the full width of its container */
+  height: auto; /* Maintain the aspect ratio of the video */
+  max-width: 45%; /* Ensure the video doesn't exceed the container width */
+  background-color: var(--container-color);
+  box-shadow: 0 2px 5px rgba(0.5, 0.5, 0.5, 0.5);
+  color: var(--text-color);
 }
 
 .project-media h2 {
