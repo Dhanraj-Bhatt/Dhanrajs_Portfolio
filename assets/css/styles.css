@@ -561,15 +561,6 @@ body.dark-theme{
     padding: 1.5rem;
   }
 
-    /* Parent container setup for grid layout
-  .skills_content {
-    display: grid; 
-    grid-template-columns: repeat(2, 332px); 
-    justify-content: center; 
-    column-gap: 3rem; 
-    row-gap: 3.5rem; 
-  } */
-
   /* Ensure .skills__area_other spans across both columns and centers */
   .skills__area_other {
     grid-column: 1 / 3;
