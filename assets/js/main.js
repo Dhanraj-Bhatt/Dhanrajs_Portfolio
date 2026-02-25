@@ -64,3 +64,13 @@ sr.reveal(`.profile__info-group`, {interval:100, delay: 700})
 sr.reveal(`.profile__buttons`, {delay: 800})
 sr.reveal(`.filters__content`, {delay: 900})
 sr.reveal(`.filters`, {delay: 1000})
+
+/*=============== MAKE PROJECTS CLICKABLE ===============*/
+const projectCards = document.querySelectorAll('.projects__card')
+
+projectCards.forEach(card => {
+    card.addEventListener('click', () => {
+        const link = card.querySelector('.projects__button').getAttribute('href')
+        window.location.href = link
+    })
+})

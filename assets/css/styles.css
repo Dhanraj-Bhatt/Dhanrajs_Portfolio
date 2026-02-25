@@ -181,6 +181,7 @@ body.dark-theme{
   display: grid;
   place-items: center;
   margin-bottom: .75rem;
+  box-shadow: 0 8px 32px hsla(var(--hue), var(--sat), var(--lig), .4);
 }
 
 .profile__name{
@@ -322,6 +323,7 @@ body.dark-theme{
   position: relative;
   border-radius: 1rem;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .projects__card img{
@@ -398,6 +400,7 @@ body.dark-theme{
 .skills__data i{
   font-size: 1rem;
   color: var(--first-color);
+  text-shadow: 0 4px 12px hsla(var(--hue), var(--sat), var(--lig), .4);
 }
 
 .siklls__name{
@@ -560,13 +563,6 @@ body.dark-theme{
   .projects__modal{
     padding: 1.5rem;
   }
-
-  /* Ensure .skills__area_other spans across both columns and centers */
-  .skills__area_other {
-    grid-column: 1 / 3;
-    grid-template-columns: 2;
-  }
-
 
   .skills__title{
     font-size: var(--normal-font-size);
