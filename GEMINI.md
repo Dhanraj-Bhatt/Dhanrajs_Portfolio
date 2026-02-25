@@ -37,4 +37,25 @@ Since this is a static website, no build step or server is strictly required. To
 
 ### Scripts
 *   Interactivity is primarily handled in `assets/js/main.js` for the main site and local `javascript.js` files for project detail pages.
-*   Scroll animations are configured via the `ScrollReveal` object.
+*   Scroll animations are configured via the @google/gemini-cli `ScrollReveal` object.
+
+## Progress and Optimizations (February 25, 2026)
+
+### Image Optimization
+*   **Action:** Converted all project images (PNG/JPG) to **WebP** format using ImageMagick (`magick`).
+*   **Details:**
+    *   `favicon.png` was kept in original format for compatibility.
+    *   All references in `index.html` and project-specific HTML/CSS files were updated from `.png`/`.jpg` to `.webp`.
+    *   Original image files were deleted after verification.
+*   **Result:** Significant file size reductions (up to 95% for some assets like `Moksh_Matrix_logo2.webp`).
+
+### Video Optimization
+*   **Action:** Optimized all MP4 videos using **FFmpeg**.
+*   **Tools Path:** `D:\Dhanraj\Unity_Prolearner\Tools\ffmpeg-2026-02-23-git-7b15039cdb-full_build\bin\ffmpeg.exe`
+*   **Settings:** Used `libx264` codec, `CRF 24`, `preset fast`, and `movflags +faststart` for web compatibility and fast loading.
+*   **Details:** Overwrote original `.mp4` files to maintain existing HTML/CSS references without modification.
+*   **Result:** Reduced total video payload while maintaining high visual quality.
+
+### Next Steps
+*   Monitor performance improvements in the live portfolio.
+*   Consider further optimizations like lazy-loading for videos or a CDN for heavy assets if needed.
