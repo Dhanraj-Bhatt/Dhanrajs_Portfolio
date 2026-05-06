@@ -1,0 +1,315 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  --hue: 207;
+  --sat: 90%;
+  --lig: 61%;
+  --first-color: hsl(var(--hue), var(--sat), var(--lig));
+  --first-color-alt: hsl(var(--hue), var(--sat), 57%);
+  --title-color: hsl(var(--hue), 12%, 15%);
+  --text-color: hsl(var(--hue), 12%, 45%);
+  --text-color-light: hsl(var(--hue), 8%, 75%);
+  --text-color-lighten: hsl(var(--hue), 8%, 92%);
+  --body-color: hsl(var(--hue), 100%, 99%);
+  --container-color: #fff;
+  --body-font: 'Poppins', sans-serif;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+}
+
+@media screen and (min-width: 968px) {
+  :root {
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
+}
+
+/*=============== PROJECT PAGE STYLES ===============*/
+
+body,
+body.project-page {
+    min-height: 100vh;
+    background:
+      radial-gradient(circle at top, hsla(var(--hue), var(--sat), var(--lig), .16), transparent 34%),
+      linear-gradient(180deg, hsla(var(--hue), 30%, 98%, 1) 0%, var(--body-color) 28%);
+}
+
+.project-hero,
+.project-layout,
+header,
+main,
+footer {
+    width: min(980px, calc(100% - 2rem));
+    margin: 0 auto;
+    font-family: var(--body-font);
+}
+
+.project-hero,
+header {
+    padding: 4rem 0 2rem;
+    text-align: left;
+}
+
+.project-hero__eyebrow {
+    display: inline-flex;
+    align-items: center;
+    padding: .45rem .85rem;
+    border-radius: 999px;
+    margin-bottom: 1.15rem;
+    background-color: hsla(var(--hue), var(--sat), var(--lig), .12);
+    color: var(--first-color);
+    font-size: var(--smaller-font-size);
+    font-weight: 600;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+.project-hero h1,
+header h1 {
+    font-size: clamp(2rem, 4vw, 3.4rem);
+    color: var(--first-color);
+    line-height: 1.05;
+    margin-bottom: 1.25rem;
+}
+
+.project-hero__lead,
+header > p:first-of-type {
+    font-size: 1rem;
+    color: var(--title-color);
+}
+
+.project-hero p,
+.project-panel p,
+header p,
+.project-list {
+    font-size: var(--small-font-size);
+    text-align: justify;
+    line-height: 1.85;
+    max-width: 70ch;
+}
+
+.project-hero p + p,
+header p + p {
+    margin-top: 1rem;
+}
+
+.project-layout,
+main {
+    display: grid;
+    gap: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.project-layout--single,
+main.project-layout--single {
+    grid-template-columns: minmax(0, 1fr);
+}
+
+.project-panel,
+main > section {
+    padding: 1.4rem;
+    border: 1px solid hsla(var(--hue), 24%, 24%, .08);
+    border-radius: 1.5rem;
+    background-color: hsla(var(--hue), 100%, 100%, .8);
+    box-shadow: 0 18px 40px hsla(var(--hue), 24%, 18%, .08);
+    backdrop-filter: blur(14px);
+}
+
+.project-panel h2,
+header h2,
+main h2 {
+    font-size: 1.1rem;
+    text-align: left;
+    margin-bottom: 1rem;
+    color: var(--title-color);
+}
+
+.project-list,
+header ul,
+.project-panel ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.project-list li,
+header ul li,
+.project-panel ul li {
+    position: relative;
+    padding-left: 1.15rem;
+    color: var(--text-color);
+}
+
+.project-list li + li,
+header ul li + li,
+.project-panel ul li + li {
+    margin-top: .8rem;
+}
+
+.project-list li::before,
+header ul li::before,
+.project-panel ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: .72rem;
+    width: .45rem;
+    height: .45rem;
+    border-radius: 50%;
+    background-color: var(--first-color);
+}
+
+.project-panel.project-panel--details {
+    align-self: start;
+}
+
+a {
+    text-decoration: none;
+}
+
+.project-media img, .project-media video {
+    border-radius: 1rem;
+    margin: 0;
+    max-width: 100%;
+    height: auto;
+    background-color: var(--container-color);
+    box-shadow: 0 14px 30px hsla(var(--hue), 24%, 10%, .16);
+    color: var(--text-color);
+}
+
+.project-media h2 {
+    font-size: var(--h2-font-size);
+    color: var(--first-color);
+}
+
+.carousel {
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: var(--first-color);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    padding: 0 .65rem;
+}
+
+.prev-btn { left: .5rem; }
+.next-btn { right: .5rem; }
+
+.carousel-btn:hover {
+    color: var(--first-color-alt);
+}
+
+.back-link {
+    display: inline-block;
+    margin: 2rem 0 3.5rem;
+    padding: .9rem 1.2rem;
+    border-radius: 999px;
+    border: 1px solid hsla(var(--hue), var(--sat), var(--lig), .25);
+    background-color: hsla(var(--hue), var(--sat), var(--lig), .08);
+    color: var(--first-color);
+    font-weight: 500;
+    transition: color 0.3s, background-color 0.3s, transform 0.3s;
+}
+
+.back-link:hover {
+    color: var(--first-color-alt);
+    background-color: hsla(var(--hue), var(--sat), var(--lig), .14);
+    transform: translateY(-2px);
+}
+
+footer {
+    text-align: center;
+}
+
+body.dark-theme,
+body.dark-theme.project-page {
+    background:
+      radial-gradient(circle at top, hsla(var(--hue), var(--sat), var(--lig), .18), transparent 34%),
+      linear-gradient(180deg, hsla(var(--hue), 28%, 14%, 1) 0%, var(--body-color) 30%);
+}
+
+body.dark-theme .project-panel,
+body.dark-theme main > section {
+    border-color: hsla(var(--hue), var(--sat), var(--lig), .16);
+    background-color: hsla(var(--hue), 24%, 12%, .82);
+    box-shadow: 0 22px 44px hsla(var(--hue), 24%, 4%, .32);
+}
+
+body.dark-theme .back-link {
+    background-color: hsla(var(--hue), 24%, 18%, .78);
+    border-color: hsla(var(--hue), var(--sat), var(--lig), .22);
+}
+
+@media screen and (min-width: 968px) {
+  .project-layout {
+    grid-template-columns: minmax(0, .95fr) minmax(0, 1.2fr);
+    align-items: start;
+  }
+
+  main {
+    grid-template-columns: minmax(0, .95fr) minmax(0, 1.2fr);
+    align-items: start;
+  }
+
+  .project-layout--single,
+  main.project-layout--single {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .project-panel,
+  main > section {
+    padding: 1.65rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .project-hero,
+  header {
+    padding-top: 3rem;
+  }
+
+  .project-panel,
+  main > section {
+    padding: 1.1rem;
+    border-radius: 1.15rem;
+  }
+
+  .back-link {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: .6rem;
+  border-radius: .5rem;
+  background-color: hsl(var(--hue), 8%, 66%);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: .5rem;
+  background-color: hsl(var(--hue), 8%, 54%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(var(--hue), 8%, 44%);
+}
+
