@@ -763,6 +763,42 @@ body.dark-theme #projects .projects__card{
     width: 100%;
   }
 
+  #projects{
+    gap: 1rem;
+  }
+
+  #projects::before{
+    display: none;
+  }
+
+  #projects .projects__timeline-item{
+    display: block;
+  }
+
+  #projects .projects__timeline-center,
+  #projects .projects__timeline-text{
+    display: none;
+  }
+
+  #projects .projects__timeline-card-wrap,
+  #projects .projects__timeline-item--card-left .projects__timeline-card-wrap,
+  #projects .projects__timeline-item--card-right .projects__timeline-card-wrap{
+    display: block;
+    width: 100%;
+    max-width: none;
+  }
+
+  #projects .projects__timeline-card-wrap::after{
+    display: none;
+  }
+
+  #projects .projects__img{
+    aspect-ratio: auto;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+  }
+
 }
 
 

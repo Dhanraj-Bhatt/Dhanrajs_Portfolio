@@ -1,5 +1,8 @@
 (() => {
   const darkTheme = 'dark-theme';
+  const clearTransitionState = () => {
+    document.body.classList.remove('page-is-transitioning');
+  };
 
   const applyTheme = (theme) => {
     if (!document.body) return;
@@ -15,9 +18,15 @@
 
   if (document.body) {
     syncSavedTheme();
+    clearTransitionState();
   } else {
-    document.addEventListener('DOMContentLoaded', syncSavedTheme, { once: true });
+    document.addEventListener('DOMContentLoaded', () => {
+      syncSavedTheme();
+      clearTransitionState();
+    }, { once: true });
   }
+
+  window.addEventListener('pageshow', clearTransitionState);
 
   window.addEventListener('storage', (event) => {
     if (event.key === 'selected-theme') {

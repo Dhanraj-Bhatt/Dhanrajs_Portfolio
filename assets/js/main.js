@@ -177,13 +177,22 @@ const renderProjects = () => {
 
 renderProjects()
 
+const clearTransitionState = () => {
+    document.body.classList.remove('page-is-transitioning')
+}
+
 // Always open the homepage from the top after refresh.
 if ('scrollRestoration' in history) {
     history.scrollRestoration = 'manual'
 }
 
 window.addEventListener('load', () => {
+    clearTransitionState()
     window.scrollTo(0, 0)
+})
+
+window.addEventListener('pageshow', () => {
+    clearTransitionState()
 })
 
 const navigateWithTransition = (url) => {
